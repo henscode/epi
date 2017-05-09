@@ -17,14 +17,15 @@ public class ListNode<T> {
     /*
      *    Create a new node and insert it at the end of list of the given node
      */    
-   public static <T> void addLast(ListNode<T> aListNode, T aData) {
+   public static <T> ListNode<T> addLast(ListNode<T> aListNode, T aData) {
        ListNode<T> previousNode = null;
        while (aListNode != null) {
            previousNode = aListNode;   
            aListNode = aListNode.next; 
        } 
        aListNode = new ListNode<T>(aData); 
-       previousNode.next = aListNode;   
+       previousNode.next = aListNode; 
+       return aListNode;
    }
  
    // Insert aNewNode after aListNode   
