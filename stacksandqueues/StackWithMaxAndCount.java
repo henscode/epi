@@ -61,5 +61,20 @@ public class StackWithMaxAndCount {
    }
    
    public static void main(String[] args) {
+       StackWithMax stack = new StackWithMax();
+        stack.push(1);
+        stack.push(20);
+        stack.push(3);
+        stack.push(20);
+        stack.push(40);
+        System.out.println("Max: " + stack.max());
+        stack.pop();
+        System.out.println("Max: " + stack.max());
+        stack.pop();
+        System.out.println("Max: " + stack.max());
+        stack.pop();
+        System.out.println("Max: " + stack.max());
+        stack.pop();
+        System.out.println("Max: " + stack.max());
    }
 }
