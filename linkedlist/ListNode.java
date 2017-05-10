@@ -1,15 +1,15 @@
 package linkedlist;
 
 public class ListNode<T> {   
-    T data;
-    ListNode<T> next;
+    public T data;
+    public ListNode<T> next;
     
-    ListNode() {
+    public ListNode() {
         this.data = null;
         this.next = null; 
     }
     
-    ListNode(T data) {        
+    public ListNode(T data) {        
         this.data = data;
         next = null;
     }
